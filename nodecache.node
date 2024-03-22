@@ -1,0 +1,14 @@
+
+//Install the node-cache library using npm. Use it to implement a simple caching mechanism in a Node.js script.
+const NodeCache = require('node-cache');
+const myCache = new NodeCache({ stdTTL: 10 });
+
+const key = 'myKey';
+const data = 'Cached Data';
+
+// Set data in the cache
+myCache.set(key, data);
+
+// Get data from the cache
+const cachedData = myCache.get(key);
+console.log('Cached Data:', cachedData);
