@@ -22,4 +22,6 @@ const hooks = {
 const asyncHook = async_hooks.createHook(hooks);
 asyncHook.enable();
 
-
+setTimeout(() => {
+  console.log('Asynchronous operation');
+}, 1000);
