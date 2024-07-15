@@ -19,4 +19,7 @@ const hooks = {
   }
 };
 
+const asyncHook = async_hooks.createHook(hooks);
+asyncHook.enable();
+
 
