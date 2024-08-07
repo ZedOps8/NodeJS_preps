@@ -3,7 +3,7 @@
 const url = require('url');
 
 const urlString = 'https://www.example.com/path?query=value';
-const parsedUrl = url.parse(urlString, true);
+const parsedUrl = url.parse(urlString, true); //statement parse
 
 
 
